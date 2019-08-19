@@ -1,0 +1,80 @@
+    <!DOCTYPE html>
+<html lang="eng-us">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title>Bootstrap Visulization Dashboard - Home</title>
+		<!--JS files-->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+		<!--CSS files-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" media="screen and (min-device-width: 320px) and (max-device-width: 500px)" href="Resources/css/mobile.css" />
+		<link rel="stylesheet" type="text/css" media="screen and (min-device-width: 501px)" href="Resources/css/main.css" />
+		
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-sm navbar-light bg-light">
+			<span class="navbar-brand mb-0 h1 logo text-white font-weight-bold">Lattitud</span>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="max_temperature.html">Max Temperature</a>
+								<a class="dropdown-item" href="humidity.html">Humidity</a>
+								<a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+								<a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="comparasion.html">Comparison</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="data.html">Data</a>
+						</li>
+		</nav>
+			
+
+		<div class="container main">
+			<div class="row">
+				<div class="col-sm-12 col-md-8 bg-white" id="col_1">
+					<h2 class="font-weight-bold">Summary: Latitude vs. X</h2>
+					<hr/>
+					<article>
+						<img class="float-left img-fluid" src="Resources/assets/images/Fig1.png" width="50%">
+						<p class="font-weight-normal text-md-left text-secondary">The purpose of thos project was to analyze how weather chamges as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+						<p class="font-weight-normal text-md-left text-secondary">After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitud. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualization created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+					</article>
+				</div>
+				<div class="col-sm-12 col-md-4 bg-white" id="col_2">
+					<aside class="aside">
+						<h3 class="font-weight-bold">Visualizations</h3>
+						<hr/>
+						<div class="text-center">
+							<img class="mx-auto" src="Resources/assets/images/Fig1.png">
+							<img class="mx-auto" src="Resources/assets/images/Fig2.png">
+							<img class="mx-auto" src="Resources/assets/images/Fig3.png">
+							<img class="mx-auto" src="Resources/assets/images/Fig4.png">
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div>
+		<footer class="footer bg-secondary" id="footer">
+			<div class="container">
+				<span class="text-white">&copy; Copyright Coding Bootcamp 2019</span>
+			</div>
+		</footer>
+	</body>
+</html>
